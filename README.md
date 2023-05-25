@@ -1,46 +1,13 @@
-# Getting Started with Create React App
+# Assessment Hellozon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    het assessent is te runnen door eerst de server op te starten door naar de map van de server te gaan met cd hellozonServer en vervolgens npm start uit te voeren. zodra er in de terminal staat Server is now running on port 3001 (http://localhost:3001/)is het succesvol.
 
-## Available Scripts
+    Open vervolgens een tweede terminal en navigeer naar de source map door cd hellozon in te voeren in de terminal. Ook daar kan je hem starten met npm start. Deze zal openen op http://localhost:3000/
 
-In the project directory, you can run:
+# vragen
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1.  Wat als er dusdanig veel kaartjes zijn dat het niet meer op de pagina past? - Momenteel is het zo dat er bij een overflow een scrollbar komt. Dit kan aangepast worden in de css van de searchbar. Bij card-container daar staat momenteel overflow: inherit dit kan aangepast worden door bijvoorbeeld scroll om zijn eigen scrollbar te krijgen.
+2.  Is het mogelijk om de kaartjes op de front-end meteen bij te werken wanneer er een
+    nieuwe is ingediend? - Ja dit kan. Door een aanpassing te maken aan de state van de component wordt de pagina automatisch geupdate. En de componenten worden opnieuw gerenderd.
+3.  Wat als de server offline is? - Als de server offline is dan kan er geen data worden opgehaald.Het eerste blokje blijft dus op de laden... fase staan. ook zal de OK knop niets doen.
+4.  Hoe zouden we de tekstjes ook opgeslagen houden na het herstarten van de server? - Dit kan je op meerdere manieren oplossen. Je kan de data opslaan in een database. Of je kan de data lokaal opslaan in een file en deze vervolgens bij het herstarten van de server weer inladen.
