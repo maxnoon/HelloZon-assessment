@@ -1,0 +1,24 @@
+.searchcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh; 
+  width: 100vh;
+  overflow: inherit;
+}
+
+/* The "> :first-child" and "> :last-child" selectors are used to automatically push the first card to the center as new cards are added. */
+.cardcontainer > :first-child {
+  margin-top: auto;
+}
+
+.cardcontainer > :last-child {
+  margin-bottom: auto;
+}
